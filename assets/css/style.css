@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:00,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    /* use dark grey later: #1e2f2f;*/
+}
+
+/*------------------------------------------------MEDIA QUERIES----------*/
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+   
+}
