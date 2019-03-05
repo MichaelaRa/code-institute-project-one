@@ -19,38 +19,49 @@
 </head>
 
 <body>
-
-    <!--Nav-->
-    <nav class="navbar navbar-light navbar-expand-sm bg-light">
-        <a href="/" class="navbar-brand">Michaela Rauscher </br> Full Stack Developer</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <container-flex>
+        <!--Nav-->
+        <nav class="navbar navbar-light navbar-expand-sm">
+            <a href="/" class="navbar-brand">Michaela Rauscher </br> Full Stack Developer</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
 
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="">Portfolio</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="">Skills</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="">Contact</a></li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    <container>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="">Portfolio</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="">Skills</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
         <!--Intro-->
         <section class="intro">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 my-5 page-header">
                     <h2 class="text-uppercase">Intro</h2>
                     <hr />
                 </div>
+            </div>
+            <div class="row">
+            <div class="intro-text .d-none .d-sm-block col-sm-12 col-md-8">
+                <p>Experienced Business Analyst and IT Consultant with a strong Business and Process Management background. Transitioning into Full Stack Software Development.</p>
+            </div>
+            </div>
+            <div class="row">
+            <div class="intro-text d-none d-md-block col-md-8">
+                <p>As a Graduate of the Code Institute with a Diploma in Software Development from Napier Edingburgh University, I specialise in HTML, CSS, JavaScript and Python. With the User Experience as the core requirement for all projects, I learn
+                    and use new frameworks as they become available and pass on knowledge to enable my custumers in their Technology journey.</p> 
+            </div>
             </div>
         </section>
 
         <!--Portfolio-->
         <section class="portfolio">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 my-5 page-header">
                     <h2 class="text-uppercase">Portfolio</h2>
                     <hr />
                 </div>
@@ -60,7 +71,7 @@
         <!--Skills-->
         <section class="skills">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 my-5 page-header">
                     <h2 class="text-uppercase">Skills</h2>
                     <hr />
                 </div>
@@ -70,17 +81,31 @@
         <!--Contact-->
         <section class="contact">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 my-5 page-header">
                     <h2 class="text-uppercase">Contact</h2>
                     <hr />
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </section>
 
-    </container>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </container>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
